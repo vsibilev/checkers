@@ -9,7 +9,11 @@ body {
 	height: 500px;
 	margin: 0 auto;
 	background: #CED3D3;
-	position: relative;	
+	position: relative;
+	-webkit-border-radius: 0 0 5px 5px;
+		        border-radius: 0 0 5px 5px;
+	-webkit-box-shadow: 2px 2px 1px #000;
+		        box-shadow: 2px 2px 1px rgba(0,0,0,0.2);	
 }
 .wrap {
 	position: absolute;
