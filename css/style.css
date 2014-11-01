@@ -1,0 +1,120 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	color: #22383D;
+	font-weight: bold;
+}
+.table {
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+	background: #CED3D3;
+	position: relative;	
+}
+.wrap {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 90%;
+	height: 90%;
+	background: #FFF;
+	border: 6px solid #3A3939;
+}
+.floated-left, 
+.floated-right {
+	height: 50%;
+}
+.row {
+	width: 100%;
+	height: 25%;
+}
+.cell {
+	text-align: center;
+}
+.floated-left .cell {
+	width: 12.5%;
+	height: 100%;
+	float: left;
+}
+.floated-right .cell {
+	width: 12.5%;
+	height: 100%;
+	float: right;
+}
+.b {
+	background: #1d1d1d;
+}
+.checker:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.checker:after {
+	content: '';
+	display: inline-block;
+	width: 80%;
+	height: 80%;
+	vertical-align: middle;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+}
+.floated-left .checker:after {
+	background: #D1EAE8;
+}
+.floated-right .checker:after {
+	background: #B03232;
+}
+.letters {
+	width: 90%;
+	height: 4%;
+	text-align: center;
+	position: absolute;
+}
+.letters.top {
+	left:5%;
+	top:0;
+}
+.letters.bottom {
+	left:5%;
+	bottom:0;
+}
+.letters li {
+	width: 12.5%;
+	float: left;
+}
+.numbers {
+	width: 4%;
+	height: 90%;
+	text-align: center;
+	position: absolute;
+}
+.numbers ul {
+	height: 100%;
+}
+.numbers li {
+	height: 12.5%;
+}
+.letters li:before,
+.numbers li:before {
+	content:'';
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.letters li span,
+.numbers li span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.numbers.left {
+	left: 0;
+	top: 5%;
+}
+.numbers.right {
+	right: 0;
+	top: 5%;
+}
